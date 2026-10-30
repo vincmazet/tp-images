@@ -1,0 +1,71 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+
+version: 1
+
+project:
+
+# ----------------------------------------------------------------------------------------------- #
+
+# Metadata
+
+  id: 807ec977-4e32-4b07-b1cc-7d7c31a145a9
+
+  title: Traitement d'images
+  description:  TP de Traitement d'images à Télécom Physique Strasbourg
+  authors:
+  - name: Vincent Mazet
+    affiliation: Université de Strasbourg
+  github: https://github.com/vincmazet/tp-images
+  license: CC-BY-NC-4.0
+  
+  # Numérotations
+  numbering:
+    equations: false
+  
+  # Fichier à exclure de la compilation
+  exclude:
+  - .ipynb_checkpoints
+  - demo.ipynb
+
+# ----------------------------------------------------------------------------------------------- #
+
+# Table of contents
+
+  toc:
+
+    - file: index.ipynb
+
+    - file: tp1.ipynb
+    - file: tp2.ipynb
+    - file: tp3.ipynb
+    - file: tp4.ipynb
+    - file: tp5.ipynb
+    - file: tp6.ipynb
+    - file: tp7.ipynb
+    - file: tp8.ipynb
+
+    # Appendices
+    - file: annexes.ipynb
+      children:
+      - url: https://vincmazet.github.io/bip/
+        title: Manuel de cours
+      - file: python.ipynb
+      - url: https://moodle.unistra.fr/course/view.php?id=18192
+        title: Moodle
+
+# ----------------------------------------------------------------------------------------------- #
+
+# Website configuration
+
+site:
+
+  template: book-theme
+  
+  options:
+    outline_maxdepth: 2
+    favicon: ../bip/src/logo-ti-site.png
+    logo: ../bip/src/logo-ti-site.png
+    hide_authors: true
+    hide_myst_branding: true
+    folders: true
+    style: src/style.css

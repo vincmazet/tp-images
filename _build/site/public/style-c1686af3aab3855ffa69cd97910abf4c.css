@@ -1,0 +1,89 @@
+/* Liens hypertextes des paragraphes */
+.article p a {
+    font-weight: normal;
+    text-decoration: none;
+    font-style: inherit;    /* Evite l'italique pour les liens à tooltip */
+}
+
+/* Légende des figures */
+.article figcaption {
+    font-size: 1em;
+    text-align: center;
+    color: inherit;
+}
+.article figcaption a {
+    /* color: var(--tw-prose-captions); */
+    color: inherit;
+}
+.article figcaption a:hover {
+    font-weight: normal;
+    text-decoration: none;
+}
+
+/* Rend les puces des listes de la même couleur que le texte */
+.article{
+    --tw-prose-bullets: var(--tw-prose-body);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.article hr {
+    background-color: rgba(59,130,246,.5);
+    border: 1px solid rgba(59,130,246,.5);
+    border-radius: 5px 5px 5px 5px;
+    height: 5px;
+    padding: 0px;
+    margin-bottom: 3.5rem;
+}
+*/
+
+.article hr {
+  border-top: 2px solid rgb(59 130 246);
+  height: 6rem;
+  background: linear-gradient(to bottom, #bfdbfe, #bfdbfe, #fff0);
+  position: relative;
+  margin: 2rem 0;
+  overflow: visible;
+}
+
+.article hr::after {
+  content: "Correction";
+  position: absolute;
+  color: rgb(59 130 246);
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.article code {
+    font-size: 1em;
+    color:darkslategray;
+}
+
+.article pre {
+    font-size: 1em;
+}
