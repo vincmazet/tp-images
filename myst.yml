@@ -63,8 +63,8 @@ site:
   
   options:
     outline_maxdepth: 2
-    favicon: ../bip/src/logo-ti-site.png
-    logo: ../bip/src/logo-ti-site.png
+    favicon: src/logo-ti-site.png
+    logo: src/logo-ti-site.png
     hide_authors: true
     hide_myst_branding: true
     folders: true
